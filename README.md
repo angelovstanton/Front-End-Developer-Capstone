@@ -2,7 +2,7 @@
 
 Welcome to the Little Lemon Restaurant website repository. This project was created as part of the Meta Front-End Developer Capstone by [angelovstanton](https://github.com/angelovstanton/Front-End-Developer-Capstone). It's built using React and offers a stylish, accessible interface for users to explore the restaurant's menu and make reservations.
 
-![Website Preview](./../src/assets/preview.jpg)
+![Website Preview](./little-lemon-restaurant/src/assets/preview.jpg)
 
 ## Live Preview
 
