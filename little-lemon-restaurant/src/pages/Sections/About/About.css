@@ -79,23 +79,27 @@
   }
 
   .about-images {
-    height: 20rem; /* Adjust for smaller screens */
+    position: relative;
     width: 100%;
-    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  .about-figure {
+    margin: 0;
+    position: static; /* Reset position */
   }
 
   .about-image-restaurant,
   .about-image-bruchetta {
-    width: 15rem;
-    height: 18rem;
-  }
-  .about-image-bruchetta {
-    top: 3rem;
-    left: 50%;
-    transform: translateX(-40%);
-  }
-  .about-image-restaurant {
-    left: 50%;
-    transform: translateX(-60%);
+    position: static; /* Reset position */
+    width: 100%;
+    max-width: 18rem; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 16px;
+    object-fit: cover;
   }
 }

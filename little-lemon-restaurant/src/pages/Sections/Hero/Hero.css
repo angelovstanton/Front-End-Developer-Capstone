@@ -72,12 +72,12 @@ p {
     padding: 2rem 1rem;
     display: grid;
     align-items: center;
-    grid-column-gap: 2rem;
-    grid-template: "info " "image";
+    grid-row-gap: 2rem; /* Add gap between rows */
+    grid-template: "info" "image"; /* Correctly stack info and image */
     grid-template-columns: 1fr;
     max-width: 65rem;
     margin: 0 auto;
-    margin-top: 96px;
+    margin-top: 0; /* Remove the fixed margin */
   }
 
   .hero-title {
@@ -96,8 +96,12 @@ p {
   }
 
   .hero-image {
-    height: 10rem;
-    justify-self: middle;
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 20rem; /* Limit max height */
+    justify-self: center; /* Center the image */
     margin-top: 1rem;
+    object-fit: cover;
+    border-radius: 16px;
   }
 }
