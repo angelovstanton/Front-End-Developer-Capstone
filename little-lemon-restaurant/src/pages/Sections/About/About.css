@@ -1,0 +1,101 @@
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.about-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.about-images {
+  flex: 1;
+  position: relative;
+  height: 25rem; /* Adjust as needed */
+}
+
+.about-header {
+  margin-bottom: 1rem;
+}
+
+.about-title {
+  font-family: "Markazi Text";
+  font-weight: medium;
+  font-size: 56px;
+  line-height: 30px;
+}
+
+.about-subtitle {
+  font-family: "Markazi Text";
+  font-size: 40px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.about-description {
+  color: black;
+}
+
+.about-figure {
+  margin: 0;
+  position: absolute;
+}
+.about-image-restaurant {
+  width: 18rem;
+  height: 20rem;
+  border-radius: 16px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.about-image-bruchetta {
+  width: 18rem;
+  height: 20rem;
+  border-radius: 16px;
+  object-fit: cover;
+  position: absolute;
+  top: 4rem;
+  left: 10rem;
+  z-index: 2;
+}
+
+@media screen and (max-width: 767px) {
+  .about-section {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .about-content {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about-images {
+    height: 20rem; /* Adjust for smaller screens */
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .about-image-restaurant,
+  .about-image-bruchetta {
+    width: 15rem;
+    height: 18rem;
+  }
+  .about-image-bruchetta {
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-40%);
+  }
+  .about-image-restaurant {
+    left: 50%;
+    transform: translateX(-60%);
+  }
+}
